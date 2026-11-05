@@ -1,0 +1,21 @@
+# EuRoC MAV, cam0 only (monocular). Intrinsics/distortion/extrinsics are read
+# from <seq>/mav0/cam0/sensor.yaml at runtime; only algorithm parameters live here.
+dataset: euroc
+camera: cam0
+
+frontend:
+  detector: orb          # orb | fast | klt | aliked_lightglue (Phase 5)
+  n_features: 2000
+  grid: [8, 6]           # bucketing to spread features over the image
+  ratio_test: 0.75
+
+two_view:
+  ransac_prob: 0.999
+  ransac_threshold_px: 1.0
+
+keyframes:
+  min_median_parallax_px: 15
+  min_tracked_ratio: 0.6
+
+output:
+  format: tum
