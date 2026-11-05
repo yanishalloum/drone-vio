@@ -13,7 +13,7 @@
 
 ## Why this project
 
-This repository is a rewrite of a course project (Polytechnique Montréal, *Navigation Systems*). The [original report](legacy/README.md) had several geometric and estimation flaws — documented honestly in [`docs/postmortem.md`](docs/postmortem.md). Fixing them step by step, and measuring every change, is the point of this repo.
+This repository is a rewrite of a course project (Polytechnique Montréal, *Navigation Systems*). The original report had several geometric and estimation flaws — documented honestly in [`docs/postmortem.md`](docs/postmortem.md). Fixing them step by step, and measuring every change, is the point of this repo.
 
 **Goals**
 1. Understand every block of a modern VO/VIO pipeline by implementing it.
@@ -93,7 +93,6 @@ src/dronevio/
 configs/        YAML configs per dataset
 scripts/        entry points (run, evaluate)
 docs/           roadmap, theory notes per phase, postmortem of v0
-legacy/         original course report and code
 tests/          unit tests (conventions, geometry on synthetic data)
 ```
 
